@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SProjects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Logo or brand name -->
+            <div class="navlogo">
+                <a href="index.html"><img src="ShreeProjectsLogo.svg" width="170px"></a>
+            </div>
+
+            <!-- Hamburger menu button -->
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <!-- Dropdown menu -->
+            <div class="dropdown-menu" id="dropdownMenu">
+                <ul class="menu-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#whysolar">Why Solar</a></li>
+                    <li><a href="#subs">Subsidies</a></li>
+                    <li><a href="#oursolutions">Our Solutions</a></li>
+                    <li><a href="#aboutus">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+  <!-- Section 1: Image Carousel - Home -->
+    <section id="home" class="carousel-section">
+        <div class="carousel-container">
+            <div class="carousel-slide active">
+                <img src="b1.jpg" alt="Slide 1">
+                <div class="carousel-content">
+                    <a href="#oursolutions"><button class="cta-button">EXPLORE SOLUTIONS</button></a>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="b2.jpg" alt="Slide 2">
+                <div class="carousel-content">
+                    <h2></h2>
+                    <p></p>
+                    <a href="#whysolar"><button class="cta-button">LEARN MORE</button></a>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="b3.jpg" alt="Slide 3">
+                <div class="carousel-content">
+                    <h2></h2>
+                    <p></p>
+                    <a href="#contact"><button class="cta-button">CONTACT US</button></a>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="b4.jpg" alt="Slide 4">
+                <div class="carousel-content">
+                    <h2></h2>
+                    <p></p>
+                    <a href="#contact"><button class="cta-button">CONTACT US</button></a>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="b5.jpg" alt="Slide 5">
+                <div class="carousel-content">
+                    <h2></h2>
+                    <p></p>
+                    <a href="#contact"><button class="cta-button">CONTACT US</button></a>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="b6.jpg" alt="Slide 6">
+                <div class="carousel-content">
+                    <h2></h2>
+                    <p></p>
+                    <a href="#contact"><button class="cta-button">CONTACT US</button></a>
+                </div>
+            </div>
+            <button class="carousel-btn prev" onclick="changeSlide(-1)">❮</button>
+            <button class="carousel-btn next" onclick="changeSlide(1)">❯</button>
+            <div class="carousel-dots">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: WhySolar -->
+    <section id="whysolar">
+        <div class="whysolar">
+            <div class="whysolarhead">
+                <h3>Who We Are</h3>
+                <p>
+                · Reg. EPC vendor for PM Surya Ghar Yojana<br>· Transparent & Cost-Efficient services<br>· Founded by ex-Tata Engineer (30+ yrs exp.)<br>· Active in Lucknow + 100 km & Pan-India for Large Projects<br>· 250 KW + capacity of solar installed under PM Surya Ghar Yojana
+                </p>
+            </div>
+            <div class="whysolarhead">
+                <h3>Why Solar?</h3>
+                <p>
+                · Environmental Benefit- Reduces carbon footprint by 1.5 tons/kW annually<br>· Economic Advantage- Cut electricity bills up to 90%; ROI in 2–4 years<br>· Low Maintenance, Long Life- 25+ years with minimal service<br>· Great for Residential & Commercial purposes- From homes to schools to factories
+                </p>
+            </div>
+            <div class="whysolarhead">
+                <h3>Govt Subsidy </h3>
+                <p>
+                (At present)<br>· MNRE Central Subsidy upto Rs 78,000 for residential systems (upto 3 kW), directly credited via National Portal<br>· UP State Subsidy upto Rs 30,000<br>· Check portal or contact us for eligibility - pmsuryaghar.gov.in
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2b: Book -->
+    <section id="book">
+        <div class="book">
+            <h2>Want to make the switch to solar today?</h2>
+            <a href="#contact"><button class="book-button">Book a Free Site Assessment</button></a>
+        </div>
+    </section>
+
+    <!-- Section 3: Subsidies -->
+    <section id="subs" class="section">
+        <div class="subsidy">
+            <h2>Why Solar Energy Makes Sense Today</h2>
+            <div class="subsidygrid">
+            <div class="subsidyhead">
+                <h3>ENVIRONMENTALLY RESPONSIBLE
+                    <br>· SOLAR ENERGY IS 100% CLEAN,
+                    <br>RENEWABLE, AND SUSTAINABLE.
+                    <br>· REDUCES GREENHOUSE GAS EMISSIONS 
+                    <br>BY UP TO 1.5 TONS PER KW INSTALLED/YEAR
+                    <br>· PROTECTS THE PLANET, ALIGNS WITH 
+                    <br>SUSTAINABLE DEVELOPMENT GOALS</h3>
+            </div>
+            <div class="subsidyhead">
+                <h3>SMART FINANCIAL CHOICE
+                    <br>· SAVE ₹50,000–₹1,00,000/YEAR (BASED ON USAGE)
+                    <br>· INCREASE HOME/PROPERTY VALUE
+                    <br>· PROTECT AGAINST RISING ELECTRICITY PRICES
+                    <br>· TAX DEPRECIATION BENEFITS FOR BUSINESSES</h3>
+            </div>
+            </div>
+            <h2>Central & State Government Subsidies</h2>
+            <div class="subsidygrid">
+            <div class="subsidyhead">
+                <h3>· CENTRAL SUBSIDY (PM SURYA GHAR YOJANA):
+                    <br> UP TO ₹78,000 PER RESIDENTIAL ROOFTOP (1 KW–3+ KW),
+                    <br> DIRECTLY TRANSFERRED VIA DBT AFTER INSTALLATION
+                    <br>· UTTAR PRADESH STATE SUBSIDY (UPNEDA):
+                    <br>UP TO ₹30,000 TOTAL,
+                    <br>FOR RESIDENTIAL SYSTEMS
+                    <br>· TOTAL SAVINGS: A 3 KW ROOFTOP IN U.P. CAN
+                    <br>SAVE UP TO ₹1,08,000, MAKING SOLAR SIGNIFICANTLY
+                    <br>MORE AFFORDABLE AND WE ASSIST YOU AT EVERY STEP
+                    <br>FROM APPLICATION TO NET-METERING</h3>
+            </div></div>  
+        </div>
+    </section>
+
+    <!-- Section 4: Our Solutions -->
+    <section id="oursolutions" class="section alt-bg">
+    <div class="oursolutions-bg">
+        <div class="oursolutions-head">
+            <div style="padding-top: 2rem;">Our Solutions                
+            </div>
+            <p>We offer tailored EPC services for every solar need</p>
+        </div>
+        <div class="oursolutions-grid">
+                <div class="oursolutions-member">
+                    <img src="on.svg" alt="On-Grid Solar Systems">
+                    <h3>On-Grid Solar Systems</h3>
+                    <p>Connected to DISCOM grid<br>· Lower electricity bills<br>· Uses net metering<br>· Subsidies available<br>· Best for Urban homes & buildings<br>· High ROI</p>
+                </div>
+                <div class="oursolutions-member">
+                    <img src="hyb.svg" alt="Hybrid Solar Systems">
+                    <h3>Hybrid Solar Systems</h3>
+                    <p>· Grid + Battery<br>· Good for reliability + savings<br>· Urban & rural locations<br>· Smart usage prioritization<br>· Backup + net metering</p>
+                </div>
+                <div class="oursolutions-member">
+                    <img src="off.svg" alt="Off-Grid Solar Systems">
+                    <h3>Off-Grid Solar Systems</h3>
+                    <p>· Completely independent of grid<br>· Uses batteries to store power<br>· Best for Rural areas & remote farms<br>· Night-time energy storage<br>· Great for unreliable supply zones</p>
+                </div>                
+        </div>
+        <div class="oursolutions-bt"><a href="#contact"><button class="book-button">GET MY PLAN</button></a></div>
+    </div>  
+    </section>
+
+    <!-- Section 5: About Us -->
+    <section id="aboutus" class="section alt-bg">
+        <div class="container">
+            <div class="about-grid">
+                <article class="about-post">
+                    <h2>About Us</h2>
+                    <article class="about-about">
+                    <h3>Who We Are</h3>
+                    <p>At Shree Projects, we empower homes and businesses with smart, sustainable solar energy solutions built for long-term value. Headquartered in Lucknow, our team brings deep industry expertise led by professionals with 30+ years of Engineering Excellence at Tata. We deliver on-grid, off-grid, and hybrid systems, tailored for residential, commercial, and industrial needs with a strong focus on transparency, performance, and reliability.
+                        With growing presence across Uttar Pradesh and the capacity to execute large-scale projects nationwide, we’re trusted by those who value clean energy, done right
+                        </p>
+                    <h3>Our Mission</h3>
+                        <p>To simplify and deliver state‑of‑the‑art on‑grid, off‑grid, and hybrid solar solutions with transparent pricing, seamless execution, and optimal long‑term value.
+                        </p>
+                    <h3>Core Values</h3>
+                        <p>We deliver honest, customer‑first solar solutions with engineering excellence and innovative practices, all while championing sustainability for a greener future.
+                    </p>
+                    </article>
+                </article>
+                <article class="about-post">
+                    <img src="img1.png" alt="Helo"">
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Contact Form -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <h3>Get in Touch</h3>
+        <div class="contact-container">
+            <div class="tally-embed">
+                <iframe data-tally-src="https://tally.so/embed/mJQd0o?alignLeft=1&transparentBackground=1" loading="lazy" width="100%" height="370" frameborder="0" marginheight="0" marginwidth="0" title="Contact form"></iframe>
+                <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="foot">
+        <div class="container">>
+            <div class="foot1">
+                <h4>Contact Details</h4>
+                    <a href="https://share.google/fiwFBlG4d37ttNWil">503-A, BLOCK A, 5 FLOOR, JUGAL’S EMERALD COURT, RANA PRATAP MARG, LUCKNOW - 226001</a>
+                    <br><a href="tel:+919532885302">+91 9532885302</a><a href="tel:+919532781932">+91 9532781932</a>
+                    <br><a href="mailto:SHREE.PROJECTS004@GMAIL.COM">SHREE.PROJECTS004@GMAIL.COM</a>
+                    <br><a>OPEN 11AM-7PM:<br> MONDAY – SATURDAY</a>
+            </div>
+            <div class="foot2">
+                <h4>Quick Links</h4>
+                    <a href="#home">HOME</a>
+                    <a href="#whysolar">WHY SOLAR</a>
+                    <a href="#subs">SUBSIDIES</a>
+                    <a href="#oursolutions">OUR SOLUTIONS</a>
+                    <a href="#oursolutions">ABOUT US</a>
+                    <a href="#oursolutions">BOOK YOUR SOLAR NOW</a>                
+                     ‎ 
+            </div>
+            <div class="foot3">
+                <img src="ShreeProjectsLogo1.svg" width="170px">
+                <p>“SHREE PROJECTS – POWERED BY EX‑TATA ENGINEER – DELIVERS PREMIUM, TURNKEY SOLAR EPC SOLUTIONS ACROSS UTTAR PRADESH AND INDIA, ENABLING CLEAN ENERGY ACCESS WITH TRANSPARENCY, QUALITY WORKMANSHIP, AND A CUSTOMER‑CENTRIC APPROACH.”<br>© 2025 ShreeProjects. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
