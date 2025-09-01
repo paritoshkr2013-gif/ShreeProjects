@@ -39,10 +39,9 @@ document.addEventListener('keydown', function(event) {
         dropdownMenu.classList.remove('active');
     }
 });
-
+    const navbar = document.querySelector('.navbar');
 // Add scroll effect to navbar
 window.addEventListener('scroll', function() {
-    const navbar = document.querySelector('.navbar');
     if (window.scrollY > 70) {
         navbar.style.background = 'rgba(255, 255, 255, 0.1)';
         navbar.style.backdropFilter = 'blur(20px)';
@@ -52,15 +51,15 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Scroll effect correction to menu
+/*/ Scroll effect correction to menu
 window.addEventListener('scroll', function() {
     const ddmt = document.querySelector('.dropdown-menu');
-    if (window.scrollY > 200) {
+    {
         ddmt.style.background = 'rgba(0, 0, 0, 0.1)';
         ddmt.style.backdropFilter = 'blur(10px)';
     }
 });
-
+*/
 // Logo white bg on scroll
 window.addEventListener('scroll', function() {
     const navlogo = document.querySelector('.navlogo');
@@ -71,17 +70,6 @@ window.addEventListener('scroll', function() {
         navlogo.style.backdropFilter = 'none';
     }
 });
-/*window.addEventListener('scroll', () => {
-    const navbar = document.querySelector('.navbar');
-    if (window.scrollY > 500) {
-        navbar.style.background = 'rgba(139, 196, 51, 1.0)';
-        navbar.style.backdropFilter = 'blur(10px)';
-    } else {
-        navbar.style.background = '#transparent';
-        navbar.style.backdropFilter = 'none';
-    }
-});
-*/
 
 // Carousel Functionality
 let slideIndex = 1;
@@ -131,9 +119,6 @@ window.addEventListener('load', setCarouselSectionHeight);
 window.addEventListener('resize', setCarouselSectionHeight);
 
 // If you have a carousel change event, call setCarouselSectionHeight() after slide changes
-
-
-
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -146,36 +131,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             });
         }
     });
-});
-
-// Contact Form Handling
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-
-    // Get form data
-    const formData = new FormData(this);
-    const name = formData.get('name');
-    const email = formData.get('email');
-    const phone = formData.get('phone');
-    const subject = formData.get('subject');
-    const message = formData.get('message');
-
-    /*// Simple validation
-    if (!name || !email || !subject || !message) {
-        alert('Please fill in all required fields.');
-        return;
-    }
-
-    // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-        alert('Please enter a valid email address.');
-        return;
-    }*/
-
-    // Simulate form submission
-    alert('Thank you for your message! We will get back to you soon.');
-    this.reset();
 });
 
 // Intersection Observer for animations
