@@ -29,6 +29,52 @@ body {
     align-self: center;
 }
 
+
+.button2 {
+    background:rgba(0, 126, 60, 1.0);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 07px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-shadow: rgba(0, 0, 0, 0.91);
+    cursor: pointer;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: fadeInUp 1s ease 0.4s both;
+}
+
+.button2:hover {
+    background: #357abd;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(74, 144, 226, 0.4);
+}
+
+
+.button3 {
+    background:rgba(0, 126, 60, 1.0);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 07px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-shadow: rgba(0, 0, 0, 0.91);
+    cursor: pointer;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: fadeInUp 1s ease 0.4s both;
+}
+
+.button3:hover {
+    background: #357abd;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(74, 144, 226, 0.4);
+}
+
 .container h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -305,7 +351,7 @@ body {
     animation: fadeInUp 1s ease 0.2s both;
 }
 
-.cta-button {
+.button1 {
     background: #0087ff;
     color: white;
     padding: 15px 30px;
@@ -320,7 +366,7 @@ body {
     animation: fadeInUp 1s ease 0.4s both;
 }
 
-.cta-button:hover {
+.button1:hover {
     background: #357abd;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(74, 144, 226, 0.4);
@@ -493,29 +539,6 @@ body {
     font-size: 1.5rem;
     font-weight: lighter;
 
-}
-
-
-.book-button {
-    background:rgba(0, 126, 60, 1.0);
-    color: white;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 07px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    text-shadow: rgba(0, 0, 0, 0.91);
-    cursor: pointer;
-    transition: all 0.3s;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    animation: fadeInUp 1s ease 0.4s both;
-}
-
-.book-button:hover {
-    background: #357abd;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(74, 144, 226, 0.4);
 }
 
 .book-grid {
@@ -946,13 +969,18 @@ body {
     .carousel-content p {
         font-size: 1rem;
     }
-    
-    .cta-button {
+
+    .button1 {
         padding: 12px 25px;
         font-size: 1rem;
     }
-      
-    .book-button {
+
+    .button2 {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+
+    .button3 {
         padding: 12px 25px;
         font-size: 1rem;
     }
