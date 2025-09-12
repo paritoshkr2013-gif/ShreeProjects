@@ -109,7 +109,6 @@ body {
 }
 
 .navlogo {
-    /*color: #ffffff;*/
     background: #ffffff;
     border-radius: 10px;
     transition: all 1.1s ease;
@@ -121,6 +120,7 @@ body {
     padding-bottom: 0.2rem;
     padding-top: 0.5rem;
 }
+
 .navlogo a {
     color: white;
     text-decoration: none;
@@ -141,7 +141,7 @@ body {
 .hamburger .bar {
     width: 25px;
     height: 3px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     margin: 3px 0;
     transition: all 0.3s ease;
     border-radius: 2px;
@@ -356,7 +356,7 @@ body {
     color: white;
     padding: 15px 30px;
     border: none;
-    border-radius: 30px;
+    border-radius: 10px;
     font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
@@ -498,9 +498,14 @@ body {
 }
 
 .whysolarhead {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
     text-align: center;
-    background: rgba(255, 255, 255, 0.4);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     padding-left: 1.7rem;
     padding-right: 1.7rem;
     transition: transform 0.3s;
@@ -587,6 +592,13 @@ body {
 }
 
 .subsidyhead {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
     text-align: left;
     width: minmax(250px, 400px);
     margin: 10px;
@@ -947,16 +959,42 @@ body {
     }
 
     
-.contact-tally
+.contact-tally  {
     margin: 0 0;
     width: 55%;
     align-items: center;
     align-self: center;
-}
+    }
 
 }
 
 @media (max-width: 480px) {
+
+    .navlogo {
+        border-radius: 10px;
+        padding-left: 2px;
+        padding-right: 7px;
+        padding-top: 7px;
+        padding-bottom: 0px;
+    }
+
+    .navlogo img {
+        padding-left: .1rem;
+        padding-right: .1rem;
+        padding-bottom: .02rem;
+        padding-top: .05rem;
+        width: 120px;
+    }
+    
+.hamburger .bar {
+    background-color: #0087FF;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+
     .carousel-section {
         margin-top: 70px;
         width: 100vw;
@@ -970,21 +1008,33 @@ body {
         font-size: 1rem;
     }
 
-    .button1 {
-        padding: 12px 25px;
-        font-size: 1rem;
+    
+    .carousel-dots {
+    bottom: 15px;
+    gap: 7px;
+    }
+
+    .dot {
+    width: 7px;
+    height: 7px;
+    }
+
+    .button1 { 
+        border-radius: 10px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        animation: fadeInUp .31s ease 0.4s both;
+        padding: 7px 10px;
+        font-size: 10px;
+        margin-bottom: 20px;
+        margin-right: 0px;
     }
 
     .button2 {
-        padding: 12px 25px;
-        font-size: 1rem;
+        padding: 7px 15px;
+        font-size: 15px;
     }
 
-    .button3 {
-        padding: 12px 25px;
-        font-size: 1rem;
-    }
-    
     .carousel-btn {
         font-size: 1.2rem;
         padding: 8px 12px;
@@ -1000,37 +1050,75 @@ body {
         right: 15px;
     }
 
-
     .whysolar {
-        background-position: center;
-        background-repeat: no-repeat;
-        gap: 0px;
-        padding: 0rem;
+    gap: 00px;
+    padding: 0rem;
+    padding-bottom: 10px;
     }
-
+    
     .whysolarhead {
-        padding-left: 0rem;
-        padding-right: 1.7rem;
+    padding-left: 10px;
+    padding-right: 10px;
     }
 
     .whysolar p {
-    font-size: 20px;
-    padding: 1.0rem;
+    font-size: 1.2rem;
+    padding: 1.2rem;
+    margin: 0rem;
     }
 
     .whysolar h3 {
-    color: #1b0e0e;
-    font-size: 2.2rem;
-    font-weight: bold;
+    font-size: 1.8rem;
     padding: 0.0rem;
     }
 
+    
+    /* Subsidy*/
+    .subsidygrid{
+        max-width: 100%;
+        margin: 0 auto;
+        align-self: center;
+    }
+    
+    .subsidyhead {
+        padding: 10px;
+        width: 100%;
+        margin: 0px;
+        margin-right: 10px;
+        margin-top: 10px;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+    }
 
-    .features,
-    .services-grid,
-    .portfolio-grid,
-    .team-grid,
-    .testimonials-grid,
+    .subsidy h2{
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 1.0rem;
+    padding-right: 1.0rem;
+}
+
+.subsidy h3{
+    font-size: 1.2rem;
+    padding-left: 1.0rem;
+    padding-right: 1.0rem;
+}
+
+/* Our Solutions */
+    .oursolutions-grid {
+    padding-top: 5.7rem;
+    padding-bottom: 2rem;
+    padding-left: 0px;
+    padding-right: 0px;
+    }
+
+    .oursolutions-head{
+    font-size: 3rem;
+    padding-bottom: 0.1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    }
+
     .about-grid {
         grid-template-columns: 1fr;
     }
@@ -1068,55 +1156,32 @@ body {
 
     
     .foot {
-    /*background: #4a90e2;
-    display: flex;
-    flex-direction: row;
-    flex-flow: row;
-    justify-content: center; /* Space columns left, center, right *
-    align-items: stretch;
-    gap: 0;*/
     max-width: 100vw;
     width: 100vw;
 }
 
 .foot .container {
-    /*padding: 2rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: center;*/
     max-width: fit-content;
-
 }
 
-.foot1, .foot2, .foot3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 400px;
-    justify-content: center;
-    padding: 20px;
-}
+    .foot1, .foot2, .foot3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    }
 
-.foot3 {
-    align-items: center;
-    background: #ffffff;
-    color: #002F69;
-}
+    .foot3 img{
+    margin-top: 5px;
+    }
 
-.foot3 img{
-    margin-top: 20px;
-}
-
-.foot h3 {
+    .foot h3 {
     color: #ffffff;
     font-size: 2rem;
     margin: 15px;
     text-align: left;
-}
+    }
 
-.foot h4{
+    .foot h4{
     color:#002F69;
     font-weight: bold;
     text-align: center;
