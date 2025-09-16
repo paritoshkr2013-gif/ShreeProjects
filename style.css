@@ -20,6 +20,10 @@ body {
     min-height: 100vh;
 }
 
+a {
+    text-decoration: none;
+}
+
 .container {
     max-width: 1400px;
     margin: 0 auto;
@@ -74,6 +78,7 @@ body {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(74, 144, 226, 0.4);
 }
+
 
 .container h2 {
     font-size: 2.5rem;
@@ -337,20 +342,6 @@ body {
     padding: 0 20px;
 }
 
-.carousel-content h2 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
-    animation: fadeInUp 1s ease;
-}
-
-.carousel-content p {
-    font-size: 1.3rem;
-    margin-bottom: 2rem;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
-    animation: fadeInUp 1s ease 0.2s both;
-}
-
 .button1 {
     background: #0087ff;
     color: white;
@@ -534,42 +525,25 @@ body {
 
 /* Book Assesment */
 .book {
-    background: rgba(139, 196, 51, 1.0);
     color: #f8f9fa;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    background: rgba(139, 196, 51, 1.0);
+    background-image: 
+    radial-gradient(rgb(255, 255, 255) 10%, transparent 10%),
+    radial-gradient(rgb(255, 255, 255) 10%, transparent 10%);
+  background-position: 0px 0px, 28px 28px;
+  background-size: 56px 56px;
+    background: #3F5EFB;
+    background: radial-gradient(circle,rgba(139, 196, 51, 1) 0%, rgba(33, 151, 255, 1) 100%);
     padding-bottom: 2.2rem;
     padding-top: .1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0px;
+    align-items: center;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 25px;
     font-weight: lighter;
-
 }
-
-.book-grid {
-    display: grid;
-    grid-template-columns: repeat( minmax(250px, 1fr));
-    gap: 30px;
-}
-
-.book-card {
-    background: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    text-align: center;
-    transition: transform 0.3s;
-}
-
-.book-card:hover {
-    transform: translateY(-5px);
-}
-
-.book-card h3 {
-    color: #4a90e2;
-    margin-bottom: 1rem;
-}
-
 
 /*Subsidy*/
 .subsidy {
@@ -598,9 +572,6 @@ body {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-
-    text-align: left;
-    width: minmax(250px, 400px);
     margin: 10px;
 }
 
@@ -616,6 +587,7 @@ body {
     text-align: left;
     font-size: 22px;
     max-width: 500px;
+    padding: 20px;
 }
 
 /* Our Solutions */
@@ -633,8 +605,6 @@ body {
     background: #0087FF;
     padding-bottom: 0.1rem;
 }
-
-
 
 .oursolutions-grid {
     max-width: 1200px;
@@ -682,6 +652,7 @@ body {
 .oursolutions-member h3 {
     color: #FF9254;
     margin-top: 80px; /* Add space for the image above */
+    margin-bottom: 0px;
     font-size: 2.0rem;
     padding-bottom: 0.0rem;
 }
@@ -986,28 +957,27 @@ body {
         width: 120px;
     }
     
-.hamburger .bar {
+    .hamburger .bar {
     background-color: #0087FF;
     margin: 3px 0;
     transition: all 0.3s ease;
     border-radius: 2px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-}
-
+    }
 
     .carousel-section {
         margin-top: 70px;
         width: 100vw;
     }
-
-    .carousel-content h2 {
-        font-size: 2rem;
+      
+    .carousel-content {
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    transform: translate(-45%, -60%);
+    text-align: center;
+    padding: 0 20px;
     }
-    
-    .carousel-content p {
-        font-size: 1rem;
-    }
-
     
     .carousel-dots {
     bottom: 15px;
@@ -1072,6 +1042,10 @@ body {
     padding: 0.0rem;
     }
 
+    .book {
+    padding-left: 1rem;
+    font-size: 15px;
+    }
     
     /* Subsidy*/
     .subsidygrid{
