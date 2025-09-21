@@ -319,4 +319,8 @@ body {
     padding-inline: 0.7em;
     padding-block: 0.em;
   }
+  .button-shadow {
+  width: calc(90% + var(--shadow-cuttoff-fix));
+  height: calc(75% + var(--shadow-cuttoff-fix));
+}
 }

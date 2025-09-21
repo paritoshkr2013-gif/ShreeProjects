@@ -441,6 +441,10 @@ a {
 /* Sections */
 .section {
     /*padding: 80px 0;*/
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+
 }
 
 .alt-bg {
@@ -562,7 +566,7 @@ a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     align-self: center;
-    padding: 20px;
+    padding: 0px;
 }
 
 .subsidyhead {
@@ -905,7 +909,7 @@ a {
     }
     
     .section {
-        padding: 60px 0;
+        padding: 0px 0;
     }
     
     .section h2 {
@@ -1020,6 +1024,10 @@ a {
         right: 15px;
     }
 
+    .section h3 {
+        font-size: 1.8rem;
+    }
+
     .whysolar {
     gap: 00px;
     padding: 0rem;
@@ -1029,12 +1037,15 @@ a {
     .whysolarhead {
     padding-left: 10px;
     padding-right: 10px;
+    border-radius: 0px;
+    margin-bottom: 10px;
     }
 
     .whysolar p {
     font-size: 1.2rem;
     padding: 1.2rem;
     margin: 0rem;
+    margin-bottom: 10px;
     }
 
     .whysolar h3 {
@@ -1055,7 +1066,7 @@ a {
     }
     
     .subsidyhead {
-        padding: 10px;
+        padding: 0px;
         width: 100%;
         margin: 0px;
         margin-right: 10px;
@@ -1063,6 +1074,13 @@ a {
         align-items: center;
         justify-content: center;
         align-self: center;
+        border-radius: 0px;
+    }
+
+    .subsidy p {
+    font-size: 1.1rem;
+    
+    margin: 0px;
     }
 
     .subsidy h2{
@@ -1091,6 +1109,13 @@ a {
     padding-bottom: 0.1rem;
     padding-left: 1rem;
     padding-right: 1rem;
+    }
+
+    .container {
+        padding: 0px;
+        margin: 0px;
+        width: 100vw;
+        margin-bottom: 15px;
     }
 
     .about-grid {
