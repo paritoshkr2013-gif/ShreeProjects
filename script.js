@@ -108,9 +108,13 @@ function setCarouselSectionHeight() {
     // Find the active slide image
     const activeSlide = document.querySelector('.carousel-slide.active img');
     const carouselSection = document.querySelector('.carousel-section');
+    const imgHeight = activeSlide.offsetHeight;
+    const viewportHeight = window.innerHeight;
+    if (imgHeight <= viewportHeight) {
     if (activeSlide && carouselSection) {
         // Get image height after it loads
         carouselSection.style.height = activeSlide.offsetHeight + 'px';
+    }
     }
 }
 
