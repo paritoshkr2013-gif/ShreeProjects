@@ -922,7 +922,7 @@ a {
     .carousel-content {
     position: absolute;
     top: 80%;
-    left: 25%;
+    left: 20%;
     transform: translate(-45%, -60%);
     text-align: center;
     padding: 0 20px;
