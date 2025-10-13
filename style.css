@@ -179,7 +179,8 @@ a {
 .dropdown-menu {
     position: absolute;
     top: 100%;
-    right: 0;
+    right: 00;
+    margin-right: 20px;
     background: rgba(139, 196, 51, 0);
     backdrop-filter: blur(10px);
     /*-webkit-backdrop-filter: blur(10px);*/
@@ -297,7 +298,7 @@ a {
 
 .carousel-content {
     position: absolute;
-    top: 75%;
+    top: 80%;
     left: 15%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -637,6 +638,14 @@ a {
     /*gap: 30px;*/
 }
 
+.about-head {
+    background: #0087FF;
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
 .about-post {
     /*height: 700px;*/
     background:rgba(0, 0, 0, 0.0);
@@ -694,7 +703,7 @@ a {
 /* Contact Form*/
 
 .contact{
-    background: #0087FF;
+    background: #8AB941;
     align-items: center;
 }
 
@@ -723,23 +732,6 @@ a {
     margin: 0%;
     padding: 0%;
     padding-bottom: 1%;
-}
-
-.submit-btn {
-    background: #4a90e2;
-    color: white;
-    padding: 12px 35px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.submit-btn:hover {
-    background: #8AB941;
-    transform: translateY(-2px);
 }
 
 /* Footer */
@@ -782,9 +774,7 @@ a {
     margin-top: 20px;
 }
 
-.foot h3 {
-    color: #ffffff;
-    font-size: 2.5rem;
+.foot h1 {
     margin: 15px;
     text-align: left;
 }
@@ -804,7 +794,7 @@ a {
     text-align: center;
     align-items: center;
     margin: 0px;
-    padding-top: 15px;
+    padding-top: 10px;
 }
 
 .foot td {
@@ -922,7 +912,7 @@ a {
     .carousel-content {
     position: absolute;
     top: 80%;
-    left: 20%;
+    left: 80%;
     transform: translate(-45%, -60%);
     text-align: center;
     padding: 0 20px;
