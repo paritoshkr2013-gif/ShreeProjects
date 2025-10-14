@@ -40,6 +40,26 @@ a {
     font-size: 20px;
 }
 
+h4{
+    font-size: 20px;
+    color:#002F69;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    padding-top: 1rem;
+    margin: 0px;
+}
+
+h5{
+    font-size: 16px;
+    color:#002F69;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    margin: 0px;
+    padding-top: 10px;
+}
+
 .container {
     max-width: 1400px;
     margin: 0 auto;
@@ -47,51 +67,6 @@ a {
     text-align: center;
     align-items: center;
     align-self: center;
-}
-
-.button2 {
-    background:rgba(0, 126, 60, 1.0);
-    color: white;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 07px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    text-shadow: rgba(0, 0, 0, 0.91);
-    cursor: pointer;
-    transition: all 0.3s;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    animation: fadeInUp 1s ease 0.4s both;
-}
-
-.button2:hover {
-    background: #357abd;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(74, 144, 226, 0.4);
-}
-
-
-.button3 {
-    background:rgba(0, 126, 60, 1.0);
-    color: white;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 07px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    text-shadow: rgba(0, 0, 0, 0.91);
-    cursor: pointer;
-    transition: all 0.3s;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    animation: fadeInUp 1s ease 0.4s both;
-}
-
-.button3:hover {
-    background: #357abd;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(74, 144, 226, 0.4);
 }
 
 .navbar {
@@ -223,7 +198,6 @@ a {
     margin: 0 0.5rem;
     margin-block-start: 0rem;
     margin-block-end: 0rem;
-    font-size: 20px;
     font-weight: bold;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 1);
 }
@@ -283,6 +257,9 @@ a {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center center; /* Center image horizontally and vertically */
+    display: block;
+    margin: 0 auto;
 }
 
 .carousel-slide::before {
@@ -306,27 +283,6 @@ a {
     z-index: 2;
     max-width: 800px;
     padding: 0 20px;
-}
-
-.button1 {
-    background: #0087ff;
-    color: white;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 10px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    animation: fadeInUp 1s ease 0.4s both;
-}
-
-.button1:hover {
-    background: #357abd;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(74, 144, 226, 0.4);
 }
 
 @keyframes fadeInUp {
@@ -537,6 +493,15 @@ a {
     margin: 10px;
 }
 
+.subsidyhead img[alt="Subsidy Image"] {
+    border-radius: 32px;
+    filter: blur(0px);
+    box-shadow: 0 0 40px 20px rgba(255,255,255,0.7), 0 0 60px 30px rgba(0,0,0,0.15);
+    /* Optional: for a soft edge effect, use a mask */
+    -webkit-mask-image: radial-gradient(circle at 50% 50%, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);
+    mask-image: radial-gradient(circle at 50% 50%, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);
+}
+
 .subsidy h1{
     text-align: center;
 }
@@ -613,6 +578,7 @@ a {
     margin-bottom: 0px;
     padding-bottom: 0.0rem;
 }
+
 .oursolutions-member p {
     text-align: left;
     color: #002F69;
@@ -779,31 +745,12 @@ a {
     text-align: left;
 }
 
-.foot h4{
-    color:#002F69;
-    font-weight: bold;
-    text-align: center;
-    align-items: center;
-    padding-top: 1rem;
-    margin: 0px;
-}
-
-.foot h5{
-    color:#002F69;
-    font-weight: bold;
-    text-align: center;
-    align-items: center;
-    margin: 0px;
-    padding-top: 10px;
-}
-
 .foot td {
     margin-left: 10px;
     color: #ffffff;
     text-align: left;
     text-decoration: none;
     font-weight: lighter;
-    font-size: 1.2rem;
     transition: color 0.3s ease;
     align-items: center;
 }
@@ -816,17 +763,34 @@ a {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+
+    h1 {
+    font-size: 32px;
+    }
+
+    h2 {
+    font-size: 22px;
+    }
+
+    p {
+    font-size: 18px;
+    }
+
+    a {
+    font-size: 18px;
+    }
+
+    h4{
+    font-size: 18px;
+    }
+
+    h5{
+    font-size: 14px;
+    }
+
     .nav-menu {
         width: 100%;
         right: -100%;
-    }
-    
-    .carousel-content h2 {
-        font-size: 2.5rem;
-    }
-    
-    .carousel-content p {
-        font-size: 1.1rem;
     }
     
     .carousel-btn {
@@ -848,9 +812,6 @@ a {
         padding: 0px 0;
     }
     
-    .section h2 {
-        font-size: 2rem;
-    }
         .nav-container {
         padding: 0 1rem;
     }
@@ -860,13 +821,25 @@ a {
         left: 1rem;
         min-width: auto;
     }
-    
-    .hero h1 {
-        font-size: 2rem;
-    }
-    
+
     .main-content {
         padding: 1rem;
+    }
+
+    
+    .oursolutions-member h2 {
+    margin-top: 60px; /* Add space for the image above */
+    }
+    
+    .oursolutions-member p {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    }
+
+    .oursolutions-member img {
+    width: 120px;
+    height: 120px;
+    top: -60px;
     }
 
     .contact-tally  {
@@ -879,6 +852,30 @@ a {
 }
 
 @media (max-width: 480px) {
+
+    h1 {
+    font-size: 30px;
+    }
+
+    h2 {
+    font-size: 20px;
+    }
+
+    p {
+    font-size: 16px;
+    }
+
+    a {
+    font-size: 16px;
+    }
+
+    h4{
+    font-size: 16px;
+    }
+
+    h5{
+    font-size: 12px;
+    }
 
     .navlogo {
         border-radius: 10px;
@@ -893,19 +890,37 @@ a {
         padding-right: .1rem;
         padding-bottom: .02rem;
         padding-top: .05rem;
-        width: 120px;
+        width: 70px;
+    }
+
+    .hamburger {
+        padding: 0.3rem;
+        margin-right: 10px;
     }
     
     .hamburger .bar {
-    background-color: #0087FF;
-    margin: 3px 0;
+    width: 16px;
+    height: 2px;
+    margin: 2px 0;
     transition: all 0.3s ease;
     border-radius: 2px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     }
+    
+/* Hamburger animation when active */
+    .hamburger.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-6px, 3px);
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-6px, -3px);
+    }
 
     .carousel-section {
-        margin-top: 70px;
         width: 100vw;
     }
       
@@ -928,22 +943,6 @@ a {
     height: 7px;
     }
 
-    .button1 { 
-        border-radius: 10px;
-        font-weight: 300;
-        letter-spacing: 1px;
-        animation: fadeInUp .31s ease 0.4s both;
-        padding: 7px 10px;
-        font-size: 10px;
-        margin-bottom: 20px;
-        margin-right: 0px;
-    }
-
-    .button2 {
-        padding: 7px 15px;
-        font-size: 15px;
-    }
-
     .carousel-btn {
         font-size: 1.2rem;
         padding: 8px 12px;
@@ -957,10 +956,6 @@ a {
     
     .next {
         right: 15px;
-    }
-
-    .section h3 {
-        font-size: 1.8rem;
     }
 
     .whysolar {
@@ -977,9 +972,12 @@ a {
     margin-bottom: 10px;
     margin-right: 100px;
     }
+    
+    .whysolarhead:hover {
+    transform: translateY(0px);
+    }
 
     .whysolar p {
-    font-size: 1.2rem;
     padding: 1.2rem;
     margin: 0rem;
     margin-bottom: 10px;
@@ -987,7 +985,6 @@ a {
     }
 
     .whysolar h3 {
-    font-size: 1.8rem;
     padding: 0.0rem;
     }
 
@@ -997,7 +994,6 @@ a {
     padding-left: 1rem;
     padding-right: 1rem;
     margin: 0px;
-    font-size: 15px;
     font-weight: lighter;
     }
  
@@ -1021,19 +1017,16 @@ a {
     }
 
     .subsidy p {
-    font-size: 1.1rem;
     margin: 0px;
     }
 
     .subsidy h2{
-    font-size: 2rem;
     font-weight: bold;
     padding-left: 1.0rem;
     padding-right: 1.0rem;
     }
 
     .subsidy h3{
-    font-size: 1.2rem;
     padding-left: 1.0rem;
     padding-right: 1.0rem;
     }
@@ -1047,10 +1040,15 @@ a {
     }
 
     .oursolutions-head{
-    font-size: 3rem;
     padding-bottom: 0.1rem;
     padding-left: 1rem;
     padding-right: 1rem;
+    }
+
+    .oursolutions-member img {
+    width: 100px;
+    height: 100px;
+    top: -50px;
     }
 
     .container {
@@ -1070,10 +1068,6 @@ a {
     .about-post {
         padding-left: 1rem;
         padding-right: 1rem;
-    }
-
-    .about-post h2 {
-        font-size: 3rem;
     }
 
     .about-post img {
@@ -1121,38 +1115,12 @@ a {
     margin-top: 5px;
     }
 
-    .foot h3 {
-    color: #ffffff;
-    font-size: 2rem;
-    margin: 15px;
-    text-align: left;
-    }
-
-    .foot h4{
-    color:#002F69;
-    font-weight: bold;
-    text-align: center;
-    align-items: center;
-    padding-top: 1rem;
-    margin: 0px;
-    }
-
-    .foot h5{
-    color:#002F69;
-    font-weight: bold;
-    text-align: center;
-    align-items: center;
-    margin: 0px;
-    padding-top: 15px;
-    }
-
     .foot td {
     margin-left: 10px;
     color: #ffffff;
     text-align: left;
     text-decoration: none;
     font-weight: lighter;
-    font-size: 1.2rem;
     transition: color 0.3s ease;
     align-items: center;
     }
