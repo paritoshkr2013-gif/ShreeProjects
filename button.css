@@ -121,7 +121,7 @@ body {
 }
 
 .button-g:hover {
-  transform: scale(0.975);
+  transform: scale(1.1);
   backdrop-filter: blur(0.01em);
   -webkit-backdrop-filter: blur(0.01em);
   -moz-backdrop-filter: blur(0.01em);

@@ -39,8 +39,9 @@ document.addEventListener('keydown', function(event) {
         dropdownMenu.classList.remove('active');
     }
 });
-    const navbar = document.querySelector('.navbar');
+
 // Add scroll effect to navbar
+    const navbar = document.querySelector('.navbar1');
 window.addEventListener('scroll', function() {
     if (window.scrollY > 70) {
         navbar.style.background = 'rgba(255, 255, 255, 0.1)';
@@ -51,15 +52,6 @@ window.addEventListener('scroll', function() {
     }
 });
 
-/*/ Scroll effect correction to menu
-window.addEventListener('scroll', function() {
-    const ddmt = document.querySelector('.dropdown-menu');
-    {
-        ddmt.style.background = 'rgba(0, 0, 0, 0.1)';
-        ddmt.style.backdropFilter = 'blur(10px)';
-    }
-});
-*/
 // Logo white bg on scroll
 window.addEventListener('scroll', function() {
     const navlogo = document.querySelector('.navlogo');
