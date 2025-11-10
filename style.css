@@ -78,15 +78,6 @@ h5{
     transition: all 1.1s ease;
 }
 
-.navbar1 {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    padding: 6px 0;
-    transition: all 1.1s ease;
-}
-
 .nav-container {
     max-width: 1700px;
     margin: 0 auto;
@@ -893,10 +884,7 @@ h5{
 
     .navlogo {
         border-radius: 10px;
-        padding-left: 2px;
-        padding-right: 7px;
-        padding-top: 7px;
-        padding-bottom: 0px;
+
     }
 
     .navlogo img {
